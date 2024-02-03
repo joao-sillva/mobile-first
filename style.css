@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --white-100: #ffffff;
+    --pink-100: #feeafa;
+    --blue-100: #eff1ff;
+    --gray-200: #8e9aaf;
+    --lilac-300: #cbc0d3;
+    --gray-600: #4a4e69;
+    --shadow-800: rgba(0, 0, 0, 0.25);
+    --purple-900: #23053a;
+}
+
+body {
+    background: var(--blue-100);
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.6rem;
+}
+
+header {
+    background: var(--gray-200);
+    display: grid;
+    place-items: center;
+}
+
+header img {
+    padding: 3.2rem 0;
+}
+
+header .title {
+    background: var(--lilac-300);
+    text-align: center;
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: 2.9rem;
+}
+
+header h1 {
+    color: var(--white-100);
+    font-size: 4rem;
+    font-weight: 400;
+    text-shadow: var(--shadow-800);
+}
+
+header h1,
+span {
+    font-family: 'Staatliches', sans-serif;
+    line-height: 3.4rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.8rem 3.2rem 6rem;
+}
+
+main .content {
+    color: var(--purple-900);
+    text-align: center;
+    max-width: 34.5rem;
+    line-height: 1.5rem;
+}
+
+.cards {
+    margin-top: 5rem;
+    display: grid;
+    gap: 3.2rem;
+}
+
+.cards .card {
+    width: 32rem;
+    position: relative;
+    height: fit-content;
+}
+
+.cards .card span {
+    background: var(--pink-100);
+    color: var(--gray-600);
+
+    position: absolute;
+    text-align: center;
+
+    width: 11.2rem;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    font-size: 2rem;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+}
+
+.cards .card img {
+    width: 100%;
+    border-radius: 2rem;
+}
